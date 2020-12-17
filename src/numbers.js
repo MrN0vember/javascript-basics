@@ -19,7 +19,7 @@ const power = (a, b) => {
 };
 
 const round = a => {
- return a % b
+ return Math.round(a);
 };
 
 const roundUp = a => {

@@ -57,7 +57,7 @@ describe("power", () => {
 });
 
 describe("round", () => {
-  xit("rounds the number to the nearest integer", () => {
+  it("rounds the number to the nearest integer", () => {
     expect(round(2.1)).toEqual(2);
     expect(round(9.7)).toEqual(10);
     expect(round(5.5)).toEqual(6);
@@ -93,7 +93,7 @@ describe("quotient", () => {
   // the first by the second, without the remainder
   // 18 divided by 7 is 2 remainder 4 (or 2.571...)
   // so the quotient of 18 and 7 is 2
-  xit("returns the quotient from dividing the first number by the second number", () => {
+  it("returns the quotient from dividing the first number by the second number", () => {
     expect(quotient(10, 3)).toEqual(3);
     expect(quotient(18, 7)).toEqual(2);
     expect(quotient(77, 10)).toEqual(7);
