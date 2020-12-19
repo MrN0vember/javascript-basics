@@ -62,7 +62,7 @@ const containsVowels = string => {
 
 const isLowerCase = string => {
 
-  return string === string.toLowerCase()
+  return string === string.toLowerCase();
 };
 
 module.exports = {
