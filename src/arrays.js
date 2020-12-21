@@ -46,19 +46,22 @@ const removeNthElement2 = (index, array) => {
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  return strings.filter(strings => strings.charAt(0).match(/[a,e,i,o,u]/i)); 
 };
 
 const removeSpaces = string => {
-  // your code here
+return string.replace(/\s/g, "");
 };
 
 const sumNumbers = numbers => {
-  // your code here
+return numbers.reduce((accumulator, numbers) => accumulator + numbers );
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+strings = strings.map(strings => strings.split("").reverse().join(""));
+strings = strings.sort();
+strings = strings.map(strings => strings.split("").reverse().join(""));
+return strings;
 };
 
 module.exports = {
