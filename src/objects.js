@@ -32,11 +32,20 @@ return cars.filter(cars => cars.manufacturer === "Honda");
 };
 
 const averageAge = people => {
-  
+  let totalAges = 0;
+  people.map(ageAv => (totalAges += ageAv.age));
+  return totalAges/people.length;
+
 };
 
 const createTalkingPerson = (name, age) => {
-  // your code here
+  let introduction = {
+    name: name,
+    age: age,
+    introduce: function(newPerson) {
+    return "Hi " + newPerson + "," + " my name is " + name + " and I am " + age + "!"; }
+    }
+  return introduction;
 };
 
 module.exports = {
